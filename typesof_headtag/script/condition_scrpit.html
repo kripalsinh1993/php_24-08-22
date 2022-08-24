@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <!-- <script>
+        alert('we redirect on flikpart are you sure to open flipkart')
+        window.location = "https://www.flipkart.com";
+    </script>-->
+    <script>
+        function test() {
+            if (confirm('are you sure to open flipkart?')) {
+                alert('we redirect to flipkart are you sure to open flipkart')
+                window.location = 'https://www.flipkart.com';
+            } else {
+                window.location = 'script.html';
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div style="width: 50%; height: 10%; margin-top: 10%;">
+        <button type="button" onclick="test()">Click here</button>
+    </div>
+</body>
+
+</html>
